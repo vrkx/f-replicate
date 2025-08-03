@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "NA-East",
+    "ServerAddress": "ping-nae.ds.on.epicgames.com"
+  },
+  {
+    "Name": "Na-West",
+    "ServerAddress": "ping-naw.ds.on.epicgames.com"
+  },
+  {
+    "Name": "Na-Central",
+    "ServerAddress": "ping-nac.ds.on.epicgames.com"
+  },
+  {
+    "Name": "Brazil",
+    "ServerAddress": "ping-br.ds.on.epicgames.com"
+  },
+  {
+    "Name": "Europe",
+    "ServerAddress": "ping-eu.ds.on.epicgames.com"
+  },
+  
+  {
+    "Name": "Oceania",
+    "ServerAddress": "ping-oce.ds.on.epicgames.com"
+  },
+
+  {
+    "Name": "Asia",
+    "ServerAddress": "ping-asia.ds.on.epicgames.com"
+  },
+
+  {
+    "Name": "Middle-East",
+    "ServerAddress": "ping-me.ds.on.epicgames.com"
+  }
+ 
+]

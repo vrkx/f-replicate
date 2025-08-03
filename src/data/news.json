@@ -1,0 +1,19 @@
+[
+ 
+    {
+    "title": "V2 is Here!",
+    "content": "This is a big update that contains a lot of enhancements for the app, and also a lot of rework for the internal code!",
+    "icon": "wifi",
+    "color" : "#00ff15",
+    "height" : "100px"
+    
+  },
+
+    {
+    "title": "placeholder",
+    "content": "placeholder placeholder placeholder",
+    "icon": "wifi",
+    "color" : "#101010",
+    "height" : "200px"
+  }
+]

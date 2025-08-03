@@ -1,0 +1,17 @@
+{
+  "welcome_message": "Welcome",
+  "sub_welcome_message": "Hoping you are having a great day!",
+  "home": "Home",
+  "servers": "Servers",
+   "shop": "Shop",
+  "settings": "Settings",
+  "no_news": "No news to show.",
+  "pinging": "Pinging...",
+  "theme_settings": "Theme Settings",
+  "change_username": "Change Username",
+  "save_username": "Save Username",
+  "language": "Language",
+  "start_with_windows": "Start with Windows (requires restart)",
+  "about_app": "About App",
+  "app_version": "Version 1.2.0"
+}

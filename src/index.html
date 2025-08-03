@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-app-screen" class="app-layout" style="visibility: hidden;">
+        <nav class="sidebar">
+           
+            <img style="margin-left: 20px;" src="./imgs/logo.png">
+
+             <ul>
+                <li><a href="#" class="nav-link active" data-page="home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="#" class="nav-link" data-page="servers">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    <span>Servers</span>
+                </a></li>
+                  <li><a href="#" class="nav-link" data-page="shop">
+                  <img src="./imgs/icons/shop.png">
+                    <span>Shop</span>
+                </a></li>
+                <li><a href="#" class="nav-link" data-page="settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <span>Settings</span>
+                </a></li>
+            </ul>
+             <div class="sidebar-profile">
+                <img src="./imgs/Ramirez.png" alt="Profile" class="profile-pic">
+                <span id="sidebar-username">Username</span>
+            </div>
+        </nav>
+    
+
+
+ <main class="content">
+            <div id="home-page" class="page-content active">
+                     <h1 style="margin-bottom: 15px;">Home</h1>
+                 <header class="welcome-header">
+                    <h1 data-i18n="welcome_message">Welcome</h1>
+                    <p data-i18n="sub_welcome_message">Hoping you are having a great day!</p>
+                </header>
+                <div id="news-container"></div>
+            </div>
+
+            <div id="servers-page" class="page-content">
+                <div class="page-header">
+                    <h1>Servers</h1>
+                    <button id="refresh-pings-btn" class="button-secondary">Refresh</button>
+                </div>
+                <div id="server-list-container"></div>
+            </div>
+
+
+             <div id="shop-page" class="page-content">
+                <div class="page-header">
+                    <h1>Shop</h1>
+                   
+                </div>
+               <main id="shop-container">
+        <p class="loading">Loading today's shop...</p>
+    </main>
+            </div>
+
+
+
+
+            <div id="settings-page" class="page-content">
+                    <h1 style="margin-bottom: 15px;">Settings</h1>
+                <div class="settings-grid">
+
+
+                    <div class="setting-card">
+                        <h3 data-i18n="theme_settings">Theme Settings</h3>
+                        <div class="theme-swatch-container">
+                            <div class="theme-swatch" data-theme="dark">
+                                <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
+                                <span>Dark</span>
+                            </div>
+                            <div class="theme-swatch" data-theme="light">
+                                 <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
+                                 <span>Light</span>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+
+                     <div class="setting-card">
+                        <h3 data-i18n="Profile">Profile</h3>
+                          <div class="sidebar-profile">
+                <img src="./imgs/Ramirez.png" alt="Profile" class="profile-pic">
+                <span id="UserSName">Username</span>
+            </div>
+                        <button id="save-username-btn" class="button-primary" data-i18n="Edit">Edit</button>
+                    </div>
+
+                    <div class="setting-card">
+                        <h3 data-i18n="change_username">Change Username</h3>
+                        <input type="text" id="username-settings-input" placeholder="New username">
+                        <button id="save-username-btn" class="button-primary" data-i18n="save_username">Save Username</button>
+                    </div>
+                    <div class="setting-card">
+                        <h3 data-i18n="language">Language</h3>
+                        <select id="language-select">
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                        </select>
+                    </div>
+                    <div class="setting-card">
+                        <h3>Ping Refresh Interval</h3>
+                        <select id="ping-interval-select">
+                            <option value="5000">5 Seconds</option>
+                            <option value="10000" selected>10 Seconds</option>
+                            <option value="30000">30 Seconds</option>
+                            <option value="0">Manual Only</option>
+                        </select>
+                    </div>
+                    <div class="setting-card">
+                        <h3 data-i18n="start_with_windows">Start with Windows</h3>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="startup-checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-card">
+                        <h3 data-i18n="about_app">About App</h3>
+                        <p id="app-version" data-i18n="app_version">Version 1.3.0</p>
+                        <button id="reset-app-btn" class="button-danger">Clear App Data & Restart</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="setup-screen-modal" class="modal-backdrop" style="display: none;">
+        <div class="setup-container">
+             <h2>Welcome! Let's get set up.</h2>
+             <div class="setup-step">
+                <h3>1. Enter your username</h3>
+                <input type="text" id="username-input" placeholder="Username">
+             </div>
+             <div class="setup-step">
+                <h3>2. Choose a theme</h3>
+                <div class="theme-swatch-container">
+                    <div class="theme-swatch" data-theme="dark">
+                        <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
+                        <span>Dark</span>
+                    </div>
+                    <div class="theme-swatch" data-theme="light">
+                            <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
+                            <span>Light</span>
+                    </div>
+                </div>
+            </div>
+             <button id="finish-setup-btn" class="button-primary">Finish Setup</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>
+
+  

@@ -1,0 +1,17 @@
+{
+  "welcome_message": "¡Bienvenido",
+  "sub_welcome_message": "¡Esperando que tengas un gran día!",
+  "home": "Inicio",
+  "servers": "Servidores",
+  "settings": "Ajustes",
+    "Shop": "Tienda",
+  "no_news": "No hay noticias para mostrar.",
+  "pinging": "Conectando...",
+  "theme_settings": "Ajustes de Tema",
+  "change_username": "Cambiar Nombre de Usuario",
+  "save_username": "Guardar Nombre",
+  "language": "Idioma",
+  "start_with_windows": "Iniciar con Windows (requiere reinicio)",
+  "about_app": "Sobre la App",
+  "app_version": "Versión 1.2.0"
+}
